@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using MvcMovie.Models;
 
-namespace MvcMovie.Controllers   //qué gonorrea casi que no soy capaz de hacerlo el pc está erlento y no he podido instalar el SQL todavía
+namespace MvcMovie.Controllers   //modificando el comentario
 {
     public class MoviesController : Controller
     {
@@ -124,6 +124,16 @@ namespace MvcMovie.Controllers   //qué gonorrea casi que no soy capaz de hacerl
             }
             return View(movie);
         }
+
+	public ActionResult move(int id)
+	{
+	if (movie==null)
+	{
+	return HttpNotFound();
+	}
+	return move(movie);
+	}
+
 
         // POST: Movies/Delete/5
         [HttpPost, ActionName("Delete")]
