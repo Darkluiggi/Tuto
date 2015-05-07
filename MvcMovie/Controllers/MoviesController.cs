@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using MvcMovie.Models;
 
-namespace MvcMovie.Controllers
+namespace MvcMovie.Controllers   //qué gonorrea casi que no soy capaz de hacerlo el pc está erlento y no he podido instalar el SQL todavía
 {
     public class MoviesController : Controller
     {
