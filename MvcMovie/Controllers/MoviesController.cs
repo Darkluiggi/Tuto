@@ -32,7 +32,7 @@ namespace MvcMovie.Controllers
     {
         movies = movies.Where(s => s.Title.Contains(searchString));
     }
-            if (!string.IsNullOrEmpty(movieGenre))
+            if (!string.IsNullOrEmpty(movieGenre))  // comprobacion de la cadena, esta vacia o contiene algo?
             {
                 movies = movies.Where(x => x.Genre == movieGenre);
             }
