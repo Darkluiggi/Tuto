@@ -15,6 +15,7 @@ namespace MvcMovie.Controllers
         private MovieDBContext db = new MovieDBContext();
 
         // GET: Movies
+        [HttpPost]
         public ActionResult Index(string movieGenre, string searchString)
         {
             var GenreLst = new List<string>();
@@ -40,6 +41,7 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Movies/Details/5
+        [HttpPost]
         public ActionResult Details(int? id)
         {
             if (id == null)
