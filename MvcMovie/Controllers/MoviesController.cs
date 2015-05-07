@@ -135,6 +135,10 @@ namespace MvcMovie.Controllers   //qué gonorrea casi que no soy capaz de hacerl
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionName("remane")]
+        [ValidateAntiForgeryToken]
+        public Actionresult RenameConfirmed(string name)
+        {}
 
         protected override void Dispose(bool disposing)
         {
